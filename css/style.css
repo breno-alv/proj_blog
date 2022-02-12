@@ -2,17 +2,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  width: auto;
+  height: 100vh;
   font-size: 16px;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   background-image: linear-gradient(to top, #e9f782, #92a105); /*#f3f3f3*/
+  background: url('../img/paisagem2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #naveg {
   background: #fff;
-  border-bottom: 1px solid #e9f782; /*#d8d8d8*/
   height: 45px;
   position: fixed;
   width: 100%;
@@ -20,7 +26,7 @@ body {
 }
 
 #area {
-  width: 720px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -30,15 +36,20 @@ body {
 }
 
 #logo {
+  position: fixed;
+  left: 50px;
   float: left;
 }
 
 #menu {
-  float: right;
+  right: 50px;
+  position: fixed;
+  /*float: right;*/
   padding: 10px 0;
 }
 
 #posta {
+  text-align: center;
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
@@ -100,5 +111,63 @@ h2 {
 
 .direitos {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
+  
+  
+}
+
+/*********************Formulario de Contato*****************************/
+
+#h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  margin-top: 60px;
+}
+
+#form-posta-contato {
+  height: 450px;
+  width: 500px;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 1px #061a00;
+  margin: 10px auto 10px auto;
+  font-size: 20px;
+}
+
+#input-contato {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  align-items: center;
+}
+
+#input-contato-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+#botao {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0, 7ms;
+  background-color: #9aaa1f;
+}
+
+#botao:hover {
+  background-color: #616e08;
+  color: white;
+}
+form div label {
+  margin-top: 20px;
 }

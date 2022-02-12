@@ -19,26 +19,58 @@
         </nav>
       </header>
     </div>
-    <article id="area-principal">
-      <section id="posta">
-        <h2>Contato</h2>
-        <span class="data-posta">06 de Janeiro de 2022</span>
-        <img class="img-posta" src="img/imagem2.png" />
-        <p>
-          Etiam sem nisl, porttitor sed venenatis ac, vehicula eu justo. Ut
-          fringilla gravida eros feugiat efficitur. Proin ullamcorper placerat
-          aliquam. Nulla pharetra tellus aliquam risus lobortis tristique.
-          Curabitur id nisi porta, ullamcorper ex a, laoreet tellus. Maecenas
-          placerat iaculis hendrerit. Maecenas ornare facilisis lectus sit amet
-          tristique. Vivamus iaculis dolor ac laoreet molestie. Duis dolor enim,
-          vestibulum cursus pharetra sed, rutrum in orci. Sed sit amet nibh
-          blandit, vulputate tellus nec, faucibus urna.
-        </p>
-        <span class="postado">Postado por Jamilton Damasceno</span>
-      </section>
-    </article>
+
+    <div id="h3">
+      <h3>Entre em Contato</h3>
+    </div>
+
+    <form id="form-posta-contato" action="" method="post">
+      <div>
+        <label id="label-contato"><strong>Nome:</strong></label>
+        <input
+          id="input-contato"
+          type="text"
+          placeholder="Digite Seu Nome"
+          required="required"
+        />
+      </div>
+
+      <div>
+        <label id="label-contato"><strong>E-mail:</strong></label>
+        <input
+          id="input-contato"
+          type="email"
+          placeholder="Digite Seu E-mail"
+          required="required"
+        />
+      </div>
+
+      <div>
+        <label id="label-contato"><strong>Assunto:</strong></label>
+        <input
+          id="input-contato"
+          type="text"
+          placeholder="Digite o Assunto"
+          required="required"
+        />
+      </div>
+
+      <div>
+        <label id="label-contato-textarea"><strong>Mensagem:</strong></label>
+        <textarea
+          id="input-contato-textarea"
+          name="text"
+          id=""
+          cols="30"
+          rows="6"
+          placeholder="Digite A Mensagem..."
+        ></textarea>
+      </div>
+      <button id="botao" type="submit"><strong>Enviar</strong></button>
+    </form>
+
     <footer class="direitos">
-      <span>Todos os direitos Reservado</span>
+      <p>&copy; Todos os direitos Reservado</p>
     </footer>
   </body>
 </html>
